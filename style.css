@@ -1,0 +1,55 @@
+body
+{
+    background: radial-gradient(rgb(240, 214, 219), rgb(242, 138, 172), rgb(238, 52, 83));
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px ;
+}
+
+#show_sketch
+{
+    float: right;    
+}
+h1
+{
+    background-color: rgba(240, 248, 255, 0.771);
+    font-family: 'Rubik Wet Paint', cursive;
+    letter-spacing: 5px;  
+    color: rgb(5, 48, 122); 
+}
+#update_score
+{
+    float: left;
+    color: darkblue;
+    font-size: 25px;
+}
+#update_time
+{
+    float: right;
+    color: darkblue;
+    font-size: 25px;
+}
+canvas
+{
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-top: 50px;
+
+    animation-name: example ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    from{ box-shadow: 2px 2px 30px rgb(11, 1, 1);}
+    to{ box-shadow: 1px 1px 30px white;}
+}
+
+p
+{
+    font-size: 20px;
+    color: rgb(3, 74, 74);
+    padding-top: 8px;
+}
+#btn
+{
+    margin-top: 300px;
+}
