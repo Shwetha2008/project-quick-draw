@@ -32,6 +32,15 @@ function draw()
     {
         line(pmouseX, pmouseY, mouseX, mouseY);
     }
+
+
+    if(drawn_sketch == sketch_name)
+    {
+        score = score + 1;
+        document.getElementById("update_score").innerHTML = "Score : " + score;
+        answer_holder = "set";
+    }
+    check_sketch();
 }
 
 function updateCanvas()
@@ -44,16 +53,6 @@ function updateCanvas()
     document.getElementById("update_sketch").innerHTML = "Sketch to be Drawn : " + sketch_name;
 }
 
-function draw()
-{
-    if(drawn_sketch == sketch_name)
-    {
-        score = score + 1;
-        document.getElementById("update_score").innerHTML = "Score : " + score;
-        answer_holder = "set";
-    }
-    check_sketch();
-}
 
 function classifyCanvas()
 {
